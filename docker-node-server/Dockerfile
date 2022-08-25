@@ -2,7 +2,7 @@
 FROM node:18-bullseye
 WORKDIR /home
 
-RUN mkdir common_types_gograb
+RUN mkdir common_types
 
 WORKDIR /home/app
 

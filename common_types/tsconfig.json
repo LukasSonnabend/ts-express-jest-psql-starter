@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "esnext", 
+        "module": "es2017", 
+        "declaration": true,
+        "declarationMap": true,
+        "outDir": "./dist",
+        "composite": true
+    }
+}

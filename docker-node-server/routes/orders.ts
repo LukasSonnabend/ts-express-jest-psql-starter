@@ -1,7 +1,7 @@
 import express from 'express';
 import { makeFakeOrder } from './utils';
 const router = express.Router();
-import { BaseOrder, OrderProcessed, OrderStatus, PaymentMethod } from '../../common_types_gograb/order';
+import { BaseOrder, OrderProcessed, OrderStatus, PaymentMethod } from '../../common_types/order';
 
 router
   .get('/', (req, res) => {

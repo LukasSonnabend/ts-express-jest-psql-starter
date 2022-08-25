@@ -10,7 +10,7 @@ services:
         - 9999:64546
         volumes:
         - ./docker-node-server:/home/app
-        - ./common_types_gograb:/home/common_types_gograb
+        - ./common_types:/home/common_types
         environment:
         - DATABASE_URL=postgresql://visweb:example@postgres-docker:5432/dev?schema=visweb
         - EXPRESS_PORT=64546

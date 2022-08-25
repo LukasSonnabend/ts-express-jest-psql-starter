@@ -1,5 +1,5 @@
-import { Product } from '../../common_types_gograb/product';
-import { BaseOrder, OrderProcessed, OrderStatus, PaymentMethod } from '../../common_types_gograb/order';
+import { Product } from '../../common_types/product';
+import { BaseOrder, OrderProcessed, OrderStatus, PaymentMethod } from '../../common_types/order';
 import { faker } from '@faker-js/faker';
 
 

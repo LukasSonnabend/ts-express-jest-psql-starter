@@ -1,5 +1,5 @@
 import express from 'express';
-import { Product } from '../../common_types_gograb/product';
+import { Product } from '../../common_types/product';
 import { makeFakeProducts } from './utils';
 
 const router = express.Router();
