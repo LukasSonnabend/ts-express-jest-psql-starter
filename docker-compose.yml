@@ -1,0 +1,28 @@
+
+version: "3"
+services:
+    nod_dev_env:
+        build:
+            context: ./docker-node-server
+            dockerfile: Dockerfile
+        container_name: node-docker
+        ports:
+        - 9999:64546
+        volumes:
+        - ./docker-node-server:/home/app
+        - ./common_types_gograb:/home/common_types_gograb
+        environment:
+        - DATABASE_URL=postgresql://visweb:example@postgres-docker:5432/dev?schema=visweb
+        - EXPRESS_PORT=64546
+    db:
+        build:
+            context: ./postgres-container
+            dockerfile: Dockerfile
+        container_name: postgres-docker
+        ports:
+        - 8888:5432
+        environment:
+            POSTGRES_USER: visweb
+            POSTGRES_PASSWORD: example
+        volumes:
+        - ./.pgdata:/var/lib/postgresql/data
